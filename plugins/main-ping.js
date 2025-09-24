@@ -63,8 +63,8 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363318478753709@newsletter',
-                    newsletterName: "E3-WAQAR-MD",
+                    newsletterJid: '120363347365643318@newsletter',
+                    newsletterName: "ZONE-MD",
                     serverMessageId: 143
                 }
             }
@@ -87,10 +87,10 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         const startTime = Date.now()
-        const message = await conn.sendMessage(from, { text: '*PINGING...*' })
+        const message = await conn.sendMessage(from, { text: '*ZONE-MD PINGING...*' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*🔥 E3-WAQAR-MD https://whatsapp.com/channel/0029VajnN629RZAbp8aZAa1E SPEED : ${ping}ms*` }, { quoted: message })
+        await conn.sendMessage(from, { text: `*🔥 ZONE-MD https://whatsapp.com/channel/0029VaraMtfFcowAKRdDdp1T SPEED : ${ping}ms*` }, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
